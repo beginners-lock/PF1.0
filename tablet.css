@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+body,#pagecont{
+	overflow-x:hidden;
+	width:100vw; height:100vh; margin:0;
+	box-sizing:border-box; scroll-behavior:smooth;
+}
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+	#navbar{
+		position:fixed; top:0px; left:0px; background-color:white;
+		width:100%; height:90px; margin:0; box-sizing:border-box; padding:0px 35px;
+		display:flex; flex-direction:row; justify-content:space-between; align-items:center;
+	}
+
+	#navtitle{
+		width:auto; height:auto; margin:0; box-sizing:border-box;
+		display:flex; flex-direction:row; justify-content:space-around; align-items:center;
+		font-size:30px; font-family:Poppins Bold;
+	}
+
+	#burger{
+		width:40px; height:40px;
+	}
+
+	#navtabcont{
+		position:absolute; top:80px; height:auto; padding:75px 10px 50px 20px; right:-400px; border-radius:0px 0px 0px 10px; 
+		width:250px; height:auto; margin:0; box-sizing:border-box; box-shadow:-2px 4px 10px rgb(180, 180, 180);
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start; background-color:white;
+		transition-duration:0.5s; opacity:0%;
+	}
+
+	.navtab{
+		margin-bottom:30px;
+		display:flex; flex-direction:column; justify-content:space-around; align-items:center;
+	}
+
+	.tabname{
+		text-align:center;  box-sizing:border-box; width:auto;
+		font-size:20px; font-family:'Poppins Regular'; font-weight:bold; width:auto; padding:0px 10px;
+	}
+
+	.tabdiv{
+		display:none;
+	}
+
+	.pages{
+		width:100%; height:100vh; margin:0; box-sizing:border-box; padding:110px 20px 0px 20px;
+	}
+
+	#homepg{
+		display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+	}
+
+	#homepgleft{
+		width:auto; height:auto; box-sizing:border-box;
+		display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+	}
+
+	.pgtop{
+		font-family:Poppins Bold; font-size:45px;
+	}
+
+	.pgmid{
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center;
+		font-family:Poppins Bold; font-size:32px; margin-bottom:5px;
+	}
+
+	#pgmidskillcont{
+		display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+		height:44px; overflow-y:hidden;
+		scroll-behavior:smooth;
+	}
+
+	#pgmidskillcont::-webkit-scrollbar{
+		display:none;
+	}
+
+	.pgbtm{
+		font-family:Poppins Regular; font-size:22px; font-weight:bold;
+	}
+
+	#homepgright{
+		position:relative;
+		height:70%; width:100%; overflow-x:hidden;
+		display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+	}
+
+	.hprmedia{
+		position:absolute; left:900px;
+		width:230px; height:auto; opacity:0%;
+		transition-duration:2s;
+	}
+
+	#servicespg{
+		display:flex; flex-direction:column; justify-content:space-between; align-items:center;
+		position:relative; height:150vh; padding:50px 20px 0px 20px;
+	}
+
+	.servicesrow{
+		box-sizing:border-box; width:100%; transition-duration:1.5s; position:absolute; opacity:0%;
+		display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:30px 30px;
+	}
+
+	#srfirst{ top:50px; left:-800px; }
+	#srsecond{ top:550px; right:-800px; flex-direction:column-reverse;}
+	#srthird{ top:1050px; left:-800px; }
+
+	.serviceimg{
+		width:100%; height:100%; margin-bottom:20px;
+		display:flex; flex-direction:column; align-items:center; justify-content:space-around;
+	}
+
+	.smainimg{
+		width:100px; height:100px; margin-bottom:15px;
+	}
+
+	.slangrow{
+		width:80%;
+		display:flex; flex-direction:row; align-items:flex-start; justify-content:space-around;
+	}
+
+	.slangrow img{
+		width:45px; height:45px;
+	}
+
+	.servicetext{
+		width:100%;
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start;
+	}
+
+	.stheader{
+		font-family:Poppins Bold; font-size:32px; color:white;
+	}
+
+	.stmini{
+		font-family:Poppins Regular; font-size:22px; font-weight:bold;
+	} 
+
+	#portfoliopg{
+		display:flex; flex-direction:column; justify-content:space-around; align-items:center; position:relative; 
+		padding:40px 20px 0px 20px;
+	}
+
+	#pfgallery{
+		display:flex; flex-direction:row; align-items:center; justify-content:flex-start;
+		width:100%; height:auto; box-sizing:border-box; overflow-x:hidden; scroll-behavior:smooth;
+	}
+
+	#left, #right{
+		width:45px; height:45px; border-radius:50%; position:absolute; top:150px;
+	}
+
+	#left{ left:20px; }
+	#right{ right:20px; }
+
+	.pfgpic{
+		min-width:230px; max-width:230px; height:auto;
+		margin:10px 35px;
+	}
+
+	.selectedpic{
+		min-width:230px; max-width:230px; height:auto;
+		margin:10px 35px; border: 10px rgba(120, 189, 104, 0.5) solid; border-radius:5px;
+	}
+
+	#pfbottom{
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+		width:100%; height:60%;
+	}
+
+	#pfheader{
+		font-family:'Poppins Bold'; font-size:32px; 
+	}
+
+	#pftext{
+		font-family:'Poppins Regular'; font-size:22px; font-weight:bold;
+	}
+
+	#pflang, #pfpics{
+		display:flex; flex-direction:row; align-items:center; justify-content:flex-start;
+		margin:25px 0px; flex-wrap:wrap;
+	}
+
+	#pflang img{
+		width:45px; height:45px; margin:0px 20px 20px 20px;
+	}
+
+	#pfpics img{
+		width:175px; height:auto; margin:20px 30px;
+	}
+
+	#contactpg{
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center;
+		padding-top:110px;
+	}
+
+	#contacttop{
+		width:auto; height:auto; box-sizing:border-box; margin-bottom:30px;
+		display:flex; flex-direction:column; justify-content:flex-start; align-items:center;
+	}
+
+	#contacttextmain{
+		width:auto; font-size:32px; font-family:Poppins Bold;
+		display:flex; flex-direction:row; justify-content:space-around; align-items:center;
+	}
+
+	#contacttextscroll{
+		display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+		height:44px; overflow-y:hidden;
+		scroll-behavior:smooth;
+	}
+
+	#contacttextscroll::-webkit-scrollbar{
+		display:none;
+	}
+
+	#contacttextmini{
+		width:auto; font-size:22px; font-family:Poppins Regular; font-weight:bold;
+		display:flex; flex-direction:row; justify-content:space-around; align-items:center;
+	}
+
+	#contactbtm{
+		width:auto; box-sizing:border-box;  
+		display:flex; flex-direction:column-reverse; align-items:center; justify-content:space-between;
+	}
+
+	#socials{
+		box-shadow:5px 5px 20px rgba(50, 20, 200, 0.5);
+		width:auto; height:auto; border-radius:10px;
+		padding:40px 30px 40px 30px;
+	}
+
+	.socialsdiv{
+		display:flex; flex-direction:row; align-items:center; justify-content:flex-start;
+		font-family:Poppins Regular; font-size:22px; font-weight:bold; padding:8px 0px;
+	}
+
+	.socialsdiv:hover{
+		cursor:pointer;
+	}
+
+	.socialsimg{
+		width:40px; height:40px; border-radius:50%; margin-right:15px;
+	}
+
+	#contactimg{
+		width:250px; height:auto; margin-bottom:30px;
+	}
+}

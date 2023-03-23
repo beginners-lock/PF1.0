@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="tablet.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div id="pagecont">
+	<div id="homepg" class="pages">
+		<div id="homepgleft">
+			<div class="pgtop">Hey, I'm Rophi</div>
+			<div class="pgmid">Your Favourite&nbsp;<div id="pgmidskillcont">
+														<div style="color:rgb(106, 120, 180);" class="pgmidskill">Full Stack Developer</div>
+														<div style="color:rgb(200, 13, 60);" class="pgmidskill">Desktop App Developer</div>
+														<div style="color:rgb(212, 211, 67);" class="pgmidskill">Python Data Analyst</div>
+													</div>
+			</div>
+			<div class="pgbtm">And I am happy to be of assistance.</div>
+		</div>
+		<div id="homepgright">
+			<img class="hprmedia" src="res/proj/media1.png">
+			<img class="hprmedia" src="res/proj/media2.png">
+			<img class="hprmedia" src="res/proj/media3.png">
+			<img class="hprmedia" src="res/proj/media4.png">
+			<img class="hprmedia" src="res/proj/media5.png">
+		</div>
+	</div>
+	<div id="servicespg" class="pages">
+		<div id="srfirst" class="servicesrow">
+			<div class="serviceimg">
+				<img class="smainimg" src="res/img/webDev.png">
+				<div class="slangrow" style="width:100%;">
+					<img src="res/img/html.svg">
+					<img src="res/img/css.svg">
+					<img src="res/img/javascript.svg">
+					<img style="width:60px; height:60px;" src="res/img/jquery.svg">
+					<img src="res/img/reactjs.svg">
+					<img src="res/img/expressjs.svg">
+					<img src="res/img/nodejs.svg">
+					<img src="res/img/mysql.svg">
+					<img src="res/img/php.svg">
+				</div>
+			</div>
+			<div class="servicetext">
+				<div class="stheader" style="color:rgb(106, 120, 180);">Full Stack Development</div>
+				<div class="stmini">
+					In website development, I build on the basic languages HTML, CSS and JS, also implementing frameworks like ReactJS for the frontend. Maintaining the JS structure I use ExpressJS and NodeJS for the backend with MySQL as the database(I sometimes use PHP for backend programming).
+				</div>
+			</div>
+		</div>
+		<div id="srsecond" class="servicesrow">
+			<div class="servicetext">
+				<div class="stheader" style="color:rgb(200, 13, 60);">Desktop App Development</div>
+				<div class="stmini">
+					Due to my JS addiction, I turned to no other than ElectronJS for Desktop App Development which also makes use of HTML, CSS and ReactJS framework. This creates a one that works for all kind of desktop app rather than having to code for different desktop build(Windows, MacOS, Linux, etc).
+				</div>
+			</div>
+			<div class="serviceimg">
+				<img class="smainimg" src="res/img/desktopApp.png">
+				<div class="slangrow">
+					<img src="res/img/electronjs.svg">
+					<img src="res/img/html.svg">
+					<img src="res/img/css.svg">
+					<img src="res/img/reactjs.svg">
+				</div>
+			</div>
+		</div>
+		<div id="srthird"  class="servicesrow">
+			<div class="serviceimg">
+				<img class="smainimg" src="res/img/dataAnal.png">
+				<div class="slangrow">
+					<img src="res/img/python.svg">
+					<img src="res/img/pandas.png">
+					<img src="res/img/numpy.png">
+					<img src="res/img/matplotlib.png">
+					<img src="res/img/seaborn.png">
+				</div>
+			</div>
+			<div class="servicetext">
+				<div class="stheader" style="color:rgb(212, 211, 67);">Python Data Analysis</div>
+				<div class="stmini">
+					As the world moves to Artificial Intelligence, it also becomes heavily reliant on Big Data for the training of this AI models(Big Data that is capable of sending MS Excel and other software to the workshop). For data analysis I make use of python and other related libraries. 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="portfoliopg" class="pages">
+		<img id="left" src="res/img/left.png" onclick="left();">
+		<img id="right" src="res/img/right.png" onclick="right();">
+		<div id="pfgallery">
+			<div class="pfgpic"></div><div class="pfgpic"></div>
+			<img class="selectedpic" src="res/proj/media1.png">
+			<img class="pfgpic" src="res/proj/media2.png">
+			<img class="pfgpic" src="res/proj/media3.png">
+			<img class="pfgpic" src="res/proj/media5.png">
+			<img class="pfgpic" src="res/proj/media17.png">
+			<img class="pfgpic" src="res/proj/media33.png">
+			<img class="pfgpic" src="res/proj/media22.png">
+			<img class="pfgpic" src="res/proj/media21.png">
+			<img class="pfgpic" src="res/proj/media14.png">
+			<div class="pfgpic"></div><div class="pfgpic"></div>
+		</div>
+		<div id="pfbottom">
+			<div id="pfheader">
+				
+			</div>
+			<div id="pftext">
+				
+			</div>
+			<div id="pflang">
+				
+			</div>
+			<div id="pfpics">
+				
+			</div>
+		</div>
+	</div>
+	<div id="contactpg" class="pages">
+		<div id="contacttop">
+			<div id="contacttextmain">Got any&nbsp; <div id="contacttextscroll">
+														<div style="color:rgb(100, 150, 250);" class="contspectext">business ideas?</div>
+														<div style="color:rgb(240, 140, 50);" class="contspectext">tech projects?</div>
+														<div style="color:rgb(120, 189, 104);" class="contspectext">job offers?</div>
+													</div>
+			</div>
+			<div id="contacttextmini">You can always reach out</div>			
+		</div>
+		<div id="contactbtm">
+			<div id="socials">
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/linkedin.svg">
+					<div class="socialstext">linkedin.com/in/rophi-chukwu-612837212</div>
+				</div>
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/whatsapp.svg">
+					<div class="socialstext">+234 813 497 2718</div>
+				</div>
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/telegram.svg">
+					<div class="socialstext">+234 813 497 2718</div>
+				</div>
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/gmail.svg">
+					<div class="socialstext">chukwurophi@gmail.com</div>
+				</div>
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/github.svg">
+					<div class="socialstext">github.com/beginners-lock</div>
+				</div>
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/instagram.svg">
+					<div class="socialstext">instagram.com/beginners_lock</div>
+				</div>
+				<div class="socialsdiv">
+					<img class="socialsimg" src="res/img/twitter.svg">
+					<div class="socialstext">@beginners_lock</div>
+				</div>
+			</div>
+			<img id="contactimg" src="res/img/contact2.jpg">
+		</div>
+	</div>
+	<div id="navbar">
+		<div id="navtitle">
+			beginners_lock
+		</div>
+		<div id="navtabcont">
+			<div class="navtab" onclick="scroller(0);"><div class="tabname">Home</div><div class="tabdiv"></div></div>
+			<div class="navtab" onclick="scroller(1);"><div class="tabname">Services</div><div class="tabdiv"></div></div>
+			<div class="navtab" onclick="scroller(2);"><div class="tabname">Portfolio</div><div class="tabdiv"></div></div>
+			<div class="navtab" onclick="scroller(3);"><div class="tabname">Contact</div><div class="tabdiv"></div></div>
+		</div>
+		<img id="burger" onclick="undockmenu();" src="res/img/menu-burger.svg">
+	</div>
+</div>
+</body>
+</html>
